@@ -24,24 +24,23 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-
-      # Root user/org pages (repo named <user>.github.io) serve from "/".
-      # Project pages (any other repo name) serve from "/<repo-name>/".
       - name: Resolve base path
         id: base
         run: |
-          if [[ "${{ github.event.repository.name }}" == *.github.io ]]; then
-            echo "path=/" >> "$GITHUB_OUTPUT"
-          else
-            echo "path=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
-          fi
-
+          REPO_NAME="${{ github.event.repository.name }}"
+          case "$REPO_NAME" in
+            *.github.io)
+              echo "path=/" >> "$GITHUB_OUTPUT"
+              ;;
+            *)
+              echo "path=/$REPO_NAME/" >> "$GITHUB_OUTPUT"
+              ;;
+          esac
       - run: npm run build -- --base=${{ steps.base.outputs.path }}
       - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
