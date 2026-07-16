@@ -28,6 +28,6 @@ export const profile: Profile = {
     github: 'https://github.com/antima1202',
     linkedin: 'https://www.linkedin.com/in/antima-modak/',
     email: 'antimamodak01@gmail.com',
-    resumeUrl: '/resume.pdf',
+    resumeUrl: 'resume.pdf',
   },
 }

@@ -15,8 +15,8 @@ export function Contact() {
   return (
     <Section eyebrow="Contact" title="Get in touch" className="max-w-2xl">
       <motion.p variants={fadeUp} initial="hidden" animate="visible" className="text-[15px] text-[var(--color-text-secondary)]">
-        Open to Forward Deployed Engineering, AI Engineering, Software Engineering, and Solutions
-        Engineering roles. The fastest way to reach me is email.
+        Open to Software Engineering, Solutions Engineering, AI Engineering, Forward Deployed Engineering.
+         The fastest way to reach me is email.
       </motion.p>
 
       <motion.div

@@ -50,7 +50,7 @@ export function Hero() {
       </motion.dl>
 
       <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-3">
-        <LinkButton href={profile.links.resumeUrl} target="_blank" rel="noreferrer" variant="primary" icon={<FileText size={15} />}>
+        <LinkButton href={`${import.meta.env.BASE_URL}${profile.links.resumeUrl}`} target="_blank" rel="noreferrer" variant="primary" icon={<FileText size={15} />}>
           Resume
         </LinkButton>
         <LinkButton href={profile.links.github} target="_blank" rel="noreferrer" icon={<GithubIcon width={15} height={15} />}>

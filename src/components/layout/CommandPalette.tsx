@@ -45,7 +45,7 @@ export function CommandPalette() {
         </Command.Group>
 
         <Command.Group heading="Links" className="px-1 py-1 text-xs text-[var(--color-text-secondary)]">
-          <Item icon={<FileText size={15} />} onSelect={() => goExternal(profile.links.resumeUrl)}>
+          <Item icon={<FileText size={15} />} onSelect={() => goExternal(`${import.meta.env.BASE_URL}${profile.links.resumeUrl}`)}>
             Open resume
           </Item>
           <Item icon={<GithubIcon width={15} height={15} />} onSelect={() => goExternal(profile.links.github)}>

@@ -21,7 +21,14 @@ export function FeaturedProjectCard({ project }: { project: Project }) {
       >
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h3 className="text-xl font-semibold text-[var(--color-text-primary)]">{project.name}</h3>
+            <div className="flex items-center gap-2.5">
+              <h3 className="text-xl font-semibold text-[var(--color-text-primary)]">{project.name}</h3>
+              {project.statusNote && (
+                <span className="rounded-full border border-[var(--color-border)] px-2 py-0.5 text-[11px] text-[var(--color-text-secondary)]">
+                  {project.statusNote}
+                </span>
+              )}
+            </div>
             <p className="mt-1.5 text-[var(--color-text-secondary)]">{project.tagline}</p>
           </div>
           <ArrowRight

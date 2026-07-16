@@ -114,7 +114,7 @@ export const projects: Project[] = [
       'A product pitch for an app that automatically selects the best card for a payment, pools balances across cards, and enforces spending limits before a transaction is made - built as a concept with a working prototype design, not a shipped product. Selected as a Top 4 finalist out of 26 teams and presented to judges from Google and NatWest.',
     date: 'Mar 2026',
     status: 'in-progress',
-    featured: false,
+    featured: true,
     techStack: [
       { category: 'Concept', items: ['Rule-based linear optimizer', 'Deep Q-Network (proposed)', 'Open Banking APIs'] },
     ],
@@ -170,4 +170,4 @@ export const projects: Project[] = [
   },
 ]
 
-export const featuredProject = projects.find((p) => p.featured)!
+export const featuredProjects = projects.filter((p) => p.featured)
