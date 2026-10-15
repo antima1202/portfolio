@@ -1,13 +1,17 @@
-import { Mail } from 'lucide-react'
+import { CalendarDays, Mail } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/ui/BrandIcons'
 import { motion } from 'framer-motion'
 import { Section } from '@/components/ui/Section'
 import { profile } from '@/content/profile'
 import { fadeUp, staggerChildren } from '@/lib/motion'
 
+
 export function Contact() {
   const links = [
     { label: 'Email', value: profile.links.email, href: `mailto:${profile.links.email}`, icon: Mail },
+    ...(profile.links.scheduleUrl
+      ? [{ label: 'Schedule a chat', value: '15-minute intro call', href: profile.links.scheduleUrl, icon: CalendarDays }]
+      : []),
     { label: 'LinkedIn', value: 'linkedin.com/in/antima-modak', href: profile.links.linkedin, icon: LinkedinIcon },
     { label: 'GitHub', value: 'github.com/antima1202', href: profile.links.github, icon: GithubIcon },
   ]

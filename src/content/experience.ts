@@ -17,31 +17,9 @@ export const experience: Role[] = [
       'Owned product development end-to-end: stakeholder requirements gathering through implementation, testing, deployment, and iterative enhancement',
       'Translated complex real-world problems from researchers and physiotherapists into user-focused software solutions',
     ],
-    technologies: ['Python', 'Flask', 'JavaScript', 'Supabase', 'REST APIs', 'Vercel', 'Git'],
+    technologies: ['Python', 'Flask', 'JavaScript', 'Supabase', 'REST APIs', 'Vercel', 'Git', 'Claude (AI-assisted development)'],
     impact: [
       'Used AI-assisted development tools to accelerate prototyping, debugging, and implementation while retaining ownership of architectural decisions',
-    ],
-  },
-  {
-    title: 'Software Engineer (Forward Deployed Engineer)',
-    organization: 'TrueLoyal',
-    location: 'United Kingdom',
-    startDate: 'Oct 2025',
-    endDate: 'Present',
-    summary:
-      'Embedded with customers to design, build, and deploy integrations between CRM and e-commerce systems - owning delivery from requirements to production support.',
-    built: [
-      '20+ automation and integration workflows using Python, REST APIs, and n8n',
-      'Backend services integrating CRM and e-commerce platforms for scalable data exchange across systems',
-    ],
-    problemsSolved: [
-      'Worked directly with customers and cross-functional stakeholders to design solutions aligned with business requirements',
-      'Owned projects across the full lifecycle: requirements analysis, implementation, testing, deployment, and support',
-    ],
-    technologies: ['Python', 'REST APIs', 'n8n', 'CRM integrations', 'E-commerce integrations'],
-    impact: [
-      'Reduced manual processes by 30% through 20+ automation and integration workflows',
-      'Improved backend/API processing performance by 15%',
     ],
   },
   {

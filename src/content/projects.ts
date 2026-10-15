@@ -14,7 +14,7 @@ export const projects: Project[] = [
       { category: 'Backend', items: ['FastAPI', 'SQLAlchemy', 'Alembic'] },
       { category: 'Frontend', items: ['React', 'TypeScript', 'Tailwind CSS'] },
       { category: 'Data', items: ['PostgreSQL 16', 'pgvector'] },
-      { category: 'AI / RAG', items: ['Ollama (local)', 'nomic-embed-text', 'Llama 3.2', 'Gemini (cloud)'] },
+      { category: 'AI / RAG', items: ['Ollama API (local)', 'nomic-embed-text', 'Llama 3.2', 'Gemini API (cloud)', 'LLM API integration'] },
       { category: 'Auth & Governance', items: ['JWT', 'bcrypt', 'Role-based access control', 'Audit logging'] },
       { category: 'Infra', items: ['Docker', 'Render', 'Vercel'] },
     ],

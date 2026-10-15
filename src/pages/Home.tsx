@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Mail } from 'lucide-react'
+import { ArrowRight, Mail, CalendarDays } from 'lucide-react'
 import { LinkedinIcon } from '@/components/ui/BrandIcons'
 import { Hero } from '@/components/sections/Hero'
 import { FeaturedProjectCard } from '@/components/sections/FeaturedProjectCard'
@@ -53,6 +53,16 @@ export function Home() {
           <LinkButton href={profile.links.linkedin} target="_blank" rel="noreferrer" icon={<LinkedinIcon width={15} height={15} />}>
             LinkedIn
           </LinkButton>
+          {profile.links.scheduleUrl && (
+            <LinkButton
+              href={profile.links.scheduleUrl}
+              target="_blank"
+              rel="noreferrer"
+              icon={<CalendarDays size={15} />}
+            >
+              Schedule a chat
+            </LinkButton>
+          )}
         </div>
       </Section>
     </>

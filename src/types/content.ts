@@ -3,6 +3,7 @@ export interface SocialLinks {
   linkedin: string
   email: string
   resumeUrl: string
+  scheduleUrl?: string
 }
 
 export interface CurrentRole {
@@ -58,6 +59,7 @@ export interface Project {
   /** Custom badge text for 'in-progress' / 'placeholder' statuses - falls
    * back to a generic label per status if omitted. */
   statusNote?: string
+  scheduleUrl?: string
 }
 
 export interface Role {
